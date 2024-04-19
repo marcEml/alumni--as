@@ -10,17 +10,17 @@ export default function Top() {
     {
       title: "Excellence académique",
       content:
-        "Le lycée est reconnu pour son excellence académique et ses résultats exceptionnels au baccalauréat",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     },
     {
       title: "Formation scientifique",
       content:
-        "Le lycée offre une formation scientifique rigoureuse dans les séries S, S-SI et S-SVT",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     },
     {
       title: "Cadre de vie favorable",
       content:
-        "Le lycée dispose d'infrastructures qui permettent aux élèves de s'épanouir et de développer leurs talents",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
     },
   ];
 

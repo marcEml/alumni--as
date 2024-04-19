@@ -50,10 +50,12 @@ export default function Submit() {
                   />
                 </svg>
               </div>
-              <dt className="mt-4 font-semibold text-white">Actualité Hebdomadaire</dt>
+              <dt className="mt-4 font-semibold text-white">
+                Actualité Hebdomadaire
+              </dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure
-                cupidatat duis commodo amet.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry.
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -75,8 +77,8 @@ export default function Submit() {
               </div>
               <dt className="mt-4 font-semibold text-white">Pas de spam</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing.
-                Voluptate incididunt anim.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry.
               </dd>
             </div>
           </dl>

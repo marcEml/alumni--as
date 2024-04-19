@@ -66,8 +66,8 @@ export default function Projects() {
                         Plus qu&apos;ne famille pour tout AS
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
-                        La CID accueille les projets des étudiants et leur offre
-                        un environnement propice à leur développement.
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum ha e printing and.
                       </span>
                     </span>
                   </span>
@@ -106,8 +106,8 @@ export default function Projects() {
                         Un appui à la vie estudiantine
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
-                        La CID accueille tout type de projet. La seule condition{" "}
-                        <strong>L&apos;innovation</strong>.
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum ha e printing and.
                       </span>
                     </span>
                   </span>
@@ -149,9 +149,8 @@ export default function Projects() {
                         Un partenaire pour tous vos projets
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
-                        La CID est un organisme dynamique et engagé qui joue un
-                        rôle important dans l&apos;accomplissement professionnel
-                        de tout apprenant.
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum ha e printing and.
                       </span>
                     </span>
                   </span>
