@@ -8,25 +8,8 @@ export default function Projects() {
         data-aos="zoom-y-out"
         className="text-xl font-black md:text-5xl text-center md:leading-tight text-gray-800 dark:text-gray-200"
       >
-        Nos projets
+        Qu&apos;est ce que la 2ALSY ?
       </h2>
-
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 justify-center">
-        <img
-          className="h-96 w-96 object-fit"
-          src="https://res.cloudinary.com/di6go353l/image/upload/v1712836980/wffcs9cjpetfzkf1xlom.jpg"
-          alt=""
-        />
-        <h2
-          data-aos="zoom-y-out"
-          data-aos-delay="350"
-          className="text-xl gray-600 mb-4 max-w-[800px] text-center mx-auto mt-20"
-        >
-          La CID aborde des projets divers et repartis en plusieurs catégories.
-          Cette diversité nous permet d&apos;atteindre plusieurs domaines
-          d&apos;activité satifaisant ainsi une majeure partie de la population.
-        </h2>
-      </div> */}
 
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="relative p-6 md:p-16">
@@ -39,7 +22,7 @@ export default function Projects() {
                 data-aos-delay="100"
                 className="text-2xl text-gray-800 font-bold sm:text-3xl dark:text-gray-200"
               >
-                Découvrez la cellule d&apos;Innovation de l&apos;ESATIC
+                Découvrez cette incroyable association
               </h2>
 
               <nav
@@ -80,7 +63,7 @@ export default function Projects() {
                     </svg>
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">
-                        Un incubateur pour les étudiants
+                        Plus qu&apos;ne famille pour tout AS
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
                         La CID accueille les projets des étudiants et leur offre
@@ -120,7 +103,7 @@ export default function Projects() {
                     </svg>
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">
-                        Diversité des projets à la CID
+                        Un appui à la vie estudiantine
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
                         La CID accueille tout type de projet. La seule condition{" "}
@@ -163,7 +146,7 @@ export default function Projects() {
                     </svg>
                     <span className="grow ms-6">
                       <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">
-                        Un partenaire engagé pour le développement
+                        Un partenaire pour tous vos projets
                       </span>
                       <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
                         La CID est un organisme dynamique et engagé qui joue un
@@ -189,8 +172,8 @@ export default function Projects() {
                     aria-labelledby="tabs-with-card-item-1"
                   >
                     <img
-                      className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://res.cloudinary.com/di6go353l/image/upload/v1712836980/wffcs9cjpetfzkf1xlom.jpg"
+                      className="shadow-xl shadow-gray-300 rounded-xl dark:shadow-gray-900/[.2]"
+                      src="https://sinvestir-ensemble.com/wp-content/uploads/2019/11/Coaching-esatic-2.jpg"
                       alt="Image Description"
                     />
                   </div>
@@ -207,7 +190,7 @@ export default function Projects() {
                   >
                     <img
                       className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://plus.unsplash.com/premium_photo-1663011157964-fe49135cdf19?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src="https://sinvestir-ensemble.com/wp-content/uploads/2019/11/Coaching-esatic-2.jpg"
                       alt="Image Description"
                     />
                   </div>
@@ -224,7 +207,7 @@ export default function Projects() {
                   >
                     <img
                       className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src="https://sinvestir-ensemble.com/wp-content/uploads/2019/11/Coaching-esatic-2.jpg"
                       alt="Image Description"
                     />
                   </div>
@@ -267,29 +250,6 @@ export default function Projects() {
             <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full dark:bg-white/[.075]"></div>
           </div>
         </div>
-      </div>
-
-      <div
-        data-aos="zoom-y-out"
-        data-aos-delay="600"
-        className="mt-7 grid justify-center gap-3 w-full sm:inline-flex"
-      >
-        <Link
-          href="/signup"
-          className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800"
-        >
-          <span>Vous avez un projet ?</span>
-          <svg
-            className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1"
-            viewBox="0 0 12 12"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-              fillRule="nonzero"
-            />
-          </svg>
-        </Link>
       </div>
     </div>
   );

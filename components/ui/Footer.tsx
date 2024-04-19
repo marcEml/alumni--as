@@ -1,25 +1,25 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#222] w-full">
+    <footer className="bg-gray-100 w-full">
       <div className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
           <div className="col-span-full lg:col-span-1">
             <a
-              className="flex-none text-xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="flex-none text-xl font-semibold text-gray-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               href="#"
               aria-label="Brand"
             >
-              CID
+              Alumni-AS
             </a>
           </div>
 
           <div className="col-span-1">
-            <h4 className="font-semibold text-gray-100">Navigation</h4>
+            <h4 className="font-semibold text-gray-800">Navigation</h4>
 
             <div className="mt-3 grid space-y-3">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Accueil
@@ -27,7 +27,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Projets
@@ -35,7 +35,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Actualités
@@ -43,7 +43,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   À propos
@@ -53,19 +53,19 @@ export default function Footer() {
           </div>
 
           <div className="col-span-1">
-            <h4 className="font-semibold text-gray-100">Companie</h4>
+            <h4 className="font-semibold text-gray-700">Companie</h4>
 
             <div className="mt-3 grid space-y-3">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="https://maps.app.goo.gl/iFe2pmY4pKPnSptX9"
                 >
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 mt-1"
+                    className="h-4 mt-1 fill-gray-500"
                   >
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g
@@ -95,7 +95,7 @@ export default function Footer() {
 
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="tel:+2250708828111"
                 >
                   <svg
@@ -127,6 +127,7 @@ export default function Footer() {
                           id="Dribbble-Light-Preview"
                           transform="translate(-103.000000, -7321.000000)"
                           fill="#ededed"
+                          className="fill-gray-500"
                         >
                           {" "}
                           <g
@@ -145,13 +146,13 @@ export default function Footer() {
                       </g>{" "}
                     </g>
                   </svg>
-                  +225 07 08 82 81 11
+                  +225 07 97 67 45 76
                 </a>
               </p>
 
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   <svg
@@ -166,7 +167,7 @@ export default function Footer() {
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     ></g>
-                    <g id="SVGRepo_iconCarrier">
+                    <g id="SVGRepo_iconCarrier" className="fill-gray-500">
                       {" "}
                       <path
                         d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
@@ -177,14 +178,14 @@ export default function Footer() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  cid@esatic.edu.ci
+                  siguibamba03@gmail.com
                 </a>
               </p>
             </div>
           </div>
 
           <div className="col-span-2">
-            <h4 className="font-semibold text-gray-100">Restez informé</h4>
+            <h4 className="font-semibold text-gray-100">Contactez nous</h4>
 
             <form>
               <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-[#333]">

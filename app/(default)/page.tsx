@@ -3,7 +3,6 @@ export const metadata = {
   description: "Page description",
 };
 
-import Testimonials from "@/components/landing/Testimonials";
 import Managers from "@/components/landing/managers";
 import Projects from "@/components/landing/projects";
 import Submit from "@/components/landing/submit";
@@ -18,7 +17,6 @@ export default function Home() {
       <Projects />
       <Managers />
       <Submit />
-      <Testimonials />
     </>
   );
 }

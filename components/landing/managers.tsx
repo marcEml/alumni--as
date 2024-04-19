@@ -5,71 +5,80 @@ import Link from "next/link";
 export default function Managers() {
   const managers = [
     {
-      name: "DR KOUASSI FRANKLIN",
-      role: "Coordinateur",
+      name: "Mentorat",
       link_image:
-        "https://res.cloudinary.com/di6go353l/image/upload/v1711277614/itjgahlnh9ex4xa4dowi.jpg",
+        "https://plus.unsplash.com/premium_photo-1661766444310-014137fc422c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      name: "PR ASSEU OLIVIER",
-      role: "Responsable",
+      name: "Le corro",
       link_image:
-        "https://res.cloudinary.com/di6go353l/image/upload/v1711277618/aiwjvylp8tvst9xjkyqr.jpg",
+        "https://plus.unsplash.com/premium_photo-1681494154423-93ba20262dd4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      name: "PR DIABY MOUSTAPHA",
-      role: "Responsable",
+      name: "Opportunités",
       link_image:
-        "https://res.cloudinary.com/di6go353l/image/upload/v1711277616/vswsd6gizw84dxn9b237.jpg",
-    },
-    {
-      name: "DR PANDRY GHISLAIN",
-      role: "Responsable",
-      link_image:
-        "https://res.cloudinary.com/di6go353l/image/upload/v1711277615/mj1esm29pxxr5buhr5m3.jpg",
+        "https://images.unsplash.com/photo-1620915283474-18ef99f53a5f?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
   return (
-    <div className="max-w-[1200px] mx-auto text-center pb-12 md:pb-20">
-      <h2 data-aos="zoom-y-out"
-        data-aos-delay="150" className="h1 mb-24 dark:text-white">
-        Une équipe d&apos;experts
-      </h2>
-      <div className="grid justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-12">
-        {managers.map((manager, index) => (
-          <div
-            data-aos="zoom-y-out"
-            data-aos-delay="350"
-            key={index}
-            className="flex flex-col items-center space-y-3"
-          >
-            <div className="h-72 w-72 rounded-full overflow-hidden">
-              <img
-                className="h-72 w-72 rounded-full hover:scale-110 transition duration-300"
-                src={manager.link_image}
-                alt=""
-              />
+    <div className="bg-[#101827]">
+      <div className="max-w-[1200px] mx-auto text-center py-24 px-14 md:pb-20">
+        <p
+          data-aos="zoom-y-out"
+          data-aos-delay="150"
+          className="text-orange-600 text-left mb-5"
+        >
+          Que gagnez vous ?
+        </p>
+        <h2
+          data-aos="zoom-y-out"
+          data-aos-delay="350"
+          className="h1 text-white text-left dark:text-white"
+        >
+          Avantages de la 2ALSY
+        </h2>
+        <p
+          data-aos="zoom-y-out"
+          data-aos-delay="650"
+          className="text-left mt-5 text-gray-200 max-w-xl"
+        >
+          Notre association est là pour vous accompagner tout au long de votre
+          parcours à l’ESATIC sur divers points.
+        </p>
+        <div className="mt-14 mb-12 grid justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+          {managers.map((manager, index) => (
+            <div
+              data-aos="zoom-y-out"
+              data-aos-delay="850"
+              key={index}
+              className="flex flex-col items-center space-y-3"
+            >
+              <div className="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                  <img
+                    className="h-[250px] w-full object-cover"
+                    src={manager.link_image}
+                    alt=""
+                  />
+                </a>
+                <div className="p-5">
+                  <a href="#">
+                    <h5 className="mb-2 text-left text-2xl font-bold tracking-tight text-orange-600 dark:text-white">
+                      {manager.name}
+                    </h5>
+                  </a>
+                  <p className="mb-3 text-justify font-normal text-gray-700 dark:text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
             </div>
-
-            <h2 className="text-xl font-black dark:text-white"> {manager.name} </h2>
-
-            <div className="flex gap-4 items-center">
-              <p className="text-lg dark:text-[#eee]"> {manager.role} </p>
-              <Link href="/signup">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 50 50"
-                  width="30px"
-                  height="30px"
-                  className="dark:fill-white"
-                >
-                  <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
