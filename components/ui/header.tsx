@@ -19,12 +19,12 @@ export default function Header() {
     scrollHandler();
     window.addEventListener("scroll", scrollHandler);
     return () => window.removeEventListener("scroll", scrollHandler);
-  }, [top]);
+  }, []);
 
   return (
     <header
       className={`fixed w-full text-white z-30 md:bg-opacity-90 transition duration-300 ease-in-out dark:bg-[#222] ${
-        !top ? "bg-white text-gray-700 dark:bg-[#222] backdrop-blur-sm dark:bg-opacity-90 shadow-lg" : ""
+        !top ? "bg-[#222] text-gray-400 dark:bg-[#222] backdrop-blur-sm dark:bg-opacity-90 shadow-lg" : ""
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-5 sm:px-6">
@@ -32,7 +32,7 @@ export default function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* <Logo /> */}
-            <p className="font-bold text-gray-700">AS-Alumni</p>
+            <p className="font-bold text-orange-600">AS-Alumni</p>
           </div>
 
           {/* Desktop navigation */}
@@ -42,7 +42,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className="font-medium hover:text-blue-500 px-5 py-3 flex items-center transition duration-150 ease-in-out dark:text-white"
+                  className="font-medium hover:text-orange-400 px-5 py-3 flex items-center transition duration-150 ease-in-out dark:text-white"
                 >
                   Accueil
                 </Link>
@@ -50,7 +50,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className="font-medium hover:text-blue-500 px-5 py-3 flex items-center transition duration-150 ease-in-out dark:text-white"
+                  className="font-medium hover:text-orange-400 px-5 py-3 flex items-center transition duration-150 ease-in-out dark:text-white"
                 >
                   Évênement
                 </Link>
@@ -58,14 +58,14 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className="font-medium hover:text-blue-500 px-5 py-3 flex items-center transition duration-150 ease-in-out dark:text-white"
+                  className="font-medium hover:text-orange-400 px-5 py-3 flex items-center transition duration-150 ease-in-out dark:text-white"
                 >
                   Blog
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="teachers"
                   className="btn-sm text-white bg-orange-600 hover:bg-gray-800 ml-3"
                 >
                   <span>Espace étudiant</span>

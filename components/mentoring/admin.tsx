@@ -23,7 +23,6 @@ export default function AdminView(props: any) {
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              //   className="lucide lucide-command"
             >
               <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
             </svg>
@@ -32,7 +31,7 @@ export default function AdminView(props: any) {
           <ul className="space-y-2 text-sm font-medium">
             <li>
               <a
-                href="#"
+                href="/teachers"
                 className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-700"
               >
                 <svg
@@ -80,7 +79,7 @@ export default function AdminView(props: any) {
 
             <li>
               <a
-                href="#"
+                href="/corro"
                 className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-700"
               >
                 <svg
@@ -145,7 +144,7 @@ export default function AdminView(props: any) {
             <li>
               <a
                 href="#"
-                className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-700"
+                className="flex items-center mb-9 rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-700"
               >
                 <svg
                   className="h-5"
@@ -175,6 +174,34 @@ export default function AdminView(props: any) {
                 </span>
               </a>
             </li>
+            <a href="/">
+              <button className="w-full px-4 py-1.5 bg-blue-50 rounded-lg flex items-center gap-4">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      d="M8 17L3 12M3 12L8 7M3 12H21"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>{" "}
+                  </g>
+                </svg>
+                Page d&apos;accueil
+              </button>
+            </a>
           </ul>
           <div className="mt-auto flex">
             <div className="flex w-full justify-between">
