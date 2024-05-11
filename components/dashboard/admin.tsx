@@ -3,29 +3,29 @@
 import { useEffect, useState } from "react";
 
 export default function AdminView(props: any) {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+  // const [windowSize, setWindowSize] = useState({
+  //   width: window.innerWidth,
+  //   height: window.innerHeight,
+  // });
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setWindowSize({
+  //       width: window.innerWidth,
+  //       height: window.innerHeight,
+  //     });
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [windowSize]);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, [windowSize]);
 
   return (
     <div>
-      {windowSize.width > 730 ? (
+      {/* {windowSize.width > 730 ? ( */}
         <div className="w-screen bg-white dark:bg-slate-900">
           <aside
             id="sidebar"
@@ -259,11 +259,11 @@ export default function AdminView(props: any) {
           </aside>
           <div className="sm:ml-64">{props.pages}</div>
         </div>
-      ) : (
+      {/* ) : (
         <div>
           {props.pages}
         </div>
-      )}
+      )} */}
     </div>
   );
 }
