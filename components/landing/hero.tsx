@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden h-[750px] before:absolute before:top-0 before:start-1/2 before:bg-[url('https://res.cloudinary.com/di6go353l/image/upload/v1713471748/qtabtk4mt1rwrfwbxg6v.jpg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')]">
-      <div className="max-w-[76rem] mx-auto px-4 sm:px-6 lg:px-8 mt-32">
+    <div className="relative overflow-hidden md:h-[750px] before:absolute before:top-0 before:start-1/2 md:before:bg-[url('https://res.cloudinary.com/di6go353l/image/upload/v1713471748/qtabtk4mt1rwrfwbxg6v.jpg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')]">
+      <div className="max-w-[76rem] mx-auto px-4 sm:px-6 lg:px-8 md:mt-32">
         <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
           <div className="mt-24">
             <p data-aos="zoom-y-out"
@@ -15,7 +15,7 @@ export default function Hero() {
             <h1
               data-aos="zoom-y-out"
               data-aos-delay="200"
-              className="block flex flex-col text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
+              className="block flex flex-col text-4xl font-extrabold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
             >
               LYCÉE
               <span>SCIENTIFIQUE DE YAMOUSSOUKRO</span>
@@ -28,7 +28,7 @@ export default function Hero() {
               Modestie, Solidarité, Courage
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <div
                 data-aos="zoom-y-out"
                 data-aos-delay="550"

@@ -1,12 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import DashboardMobileMenu from "../ui/mobile-menu.dash";
 import { Drawer } from "@geist-ui/core";
 import { User } from "@geist-ui/icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function TeachersView() {
   const [state, setState] = useState(false);
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowSize]);
 
   const math = [
     "Dr Golli",
@@ -44,9 +65,33 @@ export default function TeachersView() {
 
   return (
     <div className="w-full mb-9">
-      <div className="px-6 pt-5 pb-2 border-b-2 border-gray-100">
-        <h1 className="font-bold text-lg text-blue-700">Enseignants</h1>
-      </div>
+      {windowSize.width < 730 ? (
+        <header className="fixed w-full text-white z-30 md:bg-opacity-90 transition duration-300 ease-in-out dark:bg-[#222] text-gray-400 dark:bg-[#222] backdrop-blur-sm dark:bg-opacity-90 shadow-lg">
+          <div className="max-w-[1200px] mx-auto px-5 sm:px-6">
+            <div className="flex items-center justify-between h-16 md:h-20">
+              <div className="flex items-center rounded-lg px-3 py-2 text-slate-900 dark:text-white">
+                <svg
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
+                </svg>
+                <span className="ml-3 text-base font-semibold">2ASLY</span>
+              </div>
+              <DashboardMobileMenu />
+            </div>
+          </div>
+        </header>
+      ) : null}
 
       <Drawer visible={state} onClose={() => setState(false)} placement="right">
         <h1 className="font-bold text-left">
@@ -99,7 +144,11 @@ export default function TeachersView() {
         </Drawer.Content>
       </Drawer>
 
-      <div className="px-6 py-2 mt-6">
+      <div className="px-6">
+        <div className="md:pt-6 mb-4 pt-24 pb-2 border-b-2 border-gray-100 flex items-center justify-between">
+          <h1 className="font-bold text-lg text-blue-700">Enseignants</h1>
+        </div>
+
         <div>
           <h1 className="text-lg font-semibold">Mathématique</h1>
           <div className="flex flex-wrap gap-x-4">
@@ -366,7 +415,7 @@ export default function TeachersView() {
                 className="hover:bg-blue-50 duration-300 flex items-center gap-4 mt-4 border-2 border-gray-100 rounded-lg px-4 py-2"
               >
                 <svg
-                className="h-5 w-5"
+                  className="h-5 w-5"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

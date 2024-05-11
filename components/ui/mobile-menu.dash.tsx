@@ -1,34 +1,78 @@
-/* eslint-disable react/jsx-no-duplicate-props */
 "use client";
 
-export default function AdminView(props: any) {
+import { useState, useRef, useEffect } from "react";
+import { Transition } from "@headlessui/react";
+import Link from "next/link";
+
+export default function DashboardMobileMenu() {
+  const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
+
+  const trigger = useRef<HTMLButtonElement>(null);
+  const mobileNav = useRef<HTMLDivElement>(null);
+
+  // close the mobile menu on click outside
+  useEffect(() => {
+    const clickHandler = ({ target }: { target: EventTarget | null }): void => {
+      if (!mobileNav.current || !trigger.current) return;
+      if (
+        !mobileNavOpen ||
+        mobileNav.current.contains(target as Node) ||
+        trigger.current.contains(target as Node)
+      )
+        return;
+      setMobileNavOpen(false);
+    };
+    document.addEventListener("click", clickHandler);
+    return () => document.removeEventListener("click", clickHandler);
+  });
+
+  // close the mobile menu if the esc key is pressed
+  useEffect(() => {
+    const keyHandler = ({ keyCode }: { keyCode: number }): void => {
+      if (!mobileNavOpen || keyCode !== 27) return;
+      setMobileNavOpen(false);
+    };
+    document.addEventListener("keydown", keyHandler);
+    return () => document.removeEventListener("keydown", keyHandler);
+  });
+
   return (
-    <div className="w-screen bg-white dark:bg-slate-900">
-      <aside
-        id="sidebar"
-        className="fixed left-0 top-0 z-40 h-screen w-64 transition-transform"
-        aria-label="Sidebar"
+    <div className="flex md:hidden">
+      {/* Hamburger button */}
+      <button
+        ref={trigger}
+        className={`hamburger ${mobileNavOpen && "active"}`}
+        aria-controls="mobile-nav"
+        aria-expanded={mobileNavOpen}
+        onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
-        <div className="flex h-full flex-col overflow-y-auto border-r border-slate-200 bg-white px-3 py-4 dark:border-slate-700 dark:bg-slate-900">
-          <div className="mb-10 flex items-center rounded-lg px-3 py-2 text-slate-900 dark:text-white">
-            <svg
-              className="h-5 w-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
-            </svg>
-            <span className="ml-3 text-base font-semibold">ALumni-AS</span>
-          </div>
-          <ul className="space-y-2 text-sm font-medium">
+        <span className="sr-only">Menu</span>
+        <svg
+          className="w-6 h-6 fill-current text-gray-900"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect y="4" width="24" height="2" />
+          <rect y="11" width="24" height="2" />
+          <rect y="18" width="24" height="2" />
+        </svg>
+      </button>
+
+      {/*Mobile navigation */}
+      <div ref={mobileNav}>
+        <Transition
+          show={mobileNavOpen}
+          as="nav"
+          id="mobile-nav"
+          className="absolute top-full h-screen pb-16 z-20 left-0 w-full overflow-scroll bg-white"
+          enter="transition ease-out duration-200 transform"
+          enterFrom="opacity-0 -translate-y-2"
+          enterTo="opacity-100 translate-y-0"
+          leave="transition ease-out duration-200"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <ul className="px-5 py-2">
             <li>
               <a
                 href="/teachers"
@@ -76,7 +120,6 @@ export default function AdminView(props: any) {
                 </span>
               </a>
             </li>
-
             <li>
               <a
                 href="/corro"
@@ -175,7 +218,7 @@ export default function AdminView(props: any) {
               </a>
             </li>
             <a href="/">
-              <button className="w-full px-4 py-1.5 bg-blue-50 rounded-lg flex items-center gap-4">
+              <button className="w-full text-gray-700 px-4 py-1.5 bg-blue-50 rounded-lg flex items-center gap-4">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -203,34 +246,8 @@ export default function AdminView(props: any) {
               </button>
             </a>
           </ul>
-          <div className="mt-auto flex">
-            <div className="flex w-full justify-between">
-              <span className="text-sm font-medium text-black dark:text-white">
-                siguibamba03@gmail.com
-              </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                aria-roledescription="more menu"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                className="h-5 w-5 text-black dark:text-white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                // className="lucide lucide-more-horizontal"
-              >
-                <circle cx="12" cy="12" r="1" />
-                <circle cx="19" cy="12" r="1" />
-                <circle cx="5" cy="12" r="1" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </aside>
-      <div className="sm:ml-64">{props.pages}</div>
+        </Transition>
+      </div>
     </div>
   );
 }

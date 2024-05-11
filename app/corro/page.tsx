@@ -3,7 +3,7 @@ export const metadata = {
   description: "Page description",
 };
 
-import CorroView from "@/components/mentoring/corroView";
+import CorroView from "@/components/dashboard/corroView";
 
 export default function Home() {
   return (

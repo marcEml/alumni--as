@@ -1,9 +1,44 @@
 "use client";
 
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import axios from "axios";
+// 2asly_super_password
+
 export default function LoginView() {
+  const [emailValue, setEmailValue] = useState("");
+  const router = useRouter();
+
+  const handleEmailChange = (event: { target: { value: any } }) => {
+    setEmailValue(event.target.value);
+  };
+
+  const [passwordValue, setPasswordValue] = useState("");
+
+  const handlePasswordChange = (event: { target: { value: any } }) => {
+    setPasswordValue(event.target.value);
+  };
+
+  const handleLogin = async () => {
+    const data = {
+      email: emailValue,
+      password: passwordValue,
+    };
+
+    axios
+      .post("https://twoasly-bac.onrender.com/api/user/login", data)
+      .then((response: { data: any }) => {
+        router.push("teachers");
+      })
+      .catch((error: any) => {
+        console.error("Axios error:", error);
+      });
+  };
+
   return (
-    <section className="bg-gray-50 dark:bg-gray-900">
-      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+    <section className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto h-screen lg:py-0">
         <a
           href="#"
           className="flex items-center mb-6 text-2xl font-bold text-gray-900 dark:text-white"
@@ -27,6 +62,8 @@ export default function LoginView() {
                   type="email"
                   name="email"
                   id="email"
+                  value={emailValue}
+                  onChange={handleEmailChange}
                   className="bg-gray-50 font-bold border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="koffi@gmail.com"
                   required={true}
@@ -44,19 +81,27 @@ export default function LoginView() {
                   name="password"
                   id="password"
                   placeholder="••••••••"
+                  value={passwordValue}
+                  onChange={handlePasswordChange}
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   required={true}
                 />
               </div>
 
+              {/* <Link className="flex" href="teachers"> */}
               <button
-                type="submit"
+                type="button"
+                onClick={() => handleLogin()}
                 className="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
               >
                 Se connecter
               </button>
+              {/* </Link> */}
 
-              <a className="flex items-center gap-2 text-center text-base text-gray-600" href="/">
+              <a
+                className="flex items-center gap-2 text-center text-base text-gray-600"
+                href="/"
+              >
                 Retounez à l&apos;acceuil
                 <svg
                   className="h-5 fill-gray-600"

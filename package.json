@@ -13,6 +13,7 @@
     "@geist-ui/icons": "^1.0.2",
     "@headlessui/react": "^1.7.18",
     "aos": "^2.3.4",
+    "axios": "^1.6.8",
     "clsx": "^2.1.0",
     "flowbite-react": "^0.9.0",
     "framer-motion": "^11.0.20",
