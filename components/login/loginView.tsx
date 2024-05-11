@@ -26,14 +26,14 @@ export default function LoginView() {
       password: passwordValue,
     };
 
-    axios
-      .post("https://twoasly-bac.onrender.com/api/user/login", data)
-      .then((response: { data: any }) => {
-        router.push("teachers");
-      })
-      .catch((error: any) => {
-        console.error("Axios error:", error);
-      });
+    router.push("teachers");
+    // axios
+    //   .post("https://twoasly-bac.onrender.com/api/user/login", data)
+    //   .then((response: { data: any }) => {
+    //   })
+    //   .catch((error: any) => {
+    //     console.error("Axios error:", error);
+    //   });
   };
 
   return (
