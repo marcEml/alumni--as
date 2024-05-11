@@ -6,16 +6,19 @@ export default function Managers() {
   const managers = [
     {
       name: "Mentorat",
+      text: "Avec la 2ASLY section ESATIC, vous avez la possibilité de bénéficier de programme de mentorat personnalisé.",
       link_image:
         "https://plus.unsplash.com/premium_photo-1661766444310-014137fc422c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
+      text: "Également la 2ASLY-ESATIC accompagne l'ensemble de ses membres dans leur étude à travers des sujets corrigés, des conseils et le fonctionnement de certains enseignements.",
       name: "Le corro",
       link_image:
         "https://plus.unsplash.com/premium_photo-1681494154423-93ba20262dd4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       name: "Opportunités",
+      text: "La 2ASLY-ESATIC vous offre la possibilité d'accroitre vos activités et d'avoir des stages.",
       link_image:
         "https://images.unsplash.com/photo-1620915283474-18ef99f53a5f?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -69,10 +72,7 @@ export default function Managers() {
                     </h5>
                   </a>
                   <p className="mb-3 text-justify font-normal text-gray-700 dark:text-gray-400">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    {manager.text}
                   </p>
                 </div>
               </div>

@@ -8,8 +8,7 @@ export default function Submit() {
               Newsletter.
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
-              Voulez vous recevoir toute l’actualité sur la 2ALSY ? il vous
-              suffit juste de nous soumettre votre adresse mail.
+              Pour ne rien rater de l&apos;activité de votre amicale, n&apos;hésitez pas à vous abonner.
             </p>
             <div className="mt-6 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -54,8 +53,10 @@ export default function Submit() {
                 Actualité Hebdomadaire
               </dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry.
+                11 main 2024.
+              </dd>
+              <dd className="mt-2 leading-7 text-gray-400">
+                Présentation du super corro des AS.
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -75,10 +76,9 @@ export default function Submit() {
                   />
                 </svg>
               </div>
-              <dt className="mt-4 font-semibold text-white">Pas de spam</dt>
+              <dt className="mt-4 font-semibold text-white">Évênement</dt>
               <dd className="mt-2 leading-7 text-gray-400">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry.
+                À venir.
               </dd>
             </div>
           </dl>

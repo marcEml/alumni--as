@@ -10,17 +10,17 @@ export default function Top() {
     {
       title: "Excellence académique",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+        "Depuis son existence, le LSY obtient chaque année des taux de reussite les plus hauts du pays",
     },
     {
-      title: "Formation scientifique",
+      title: "Formation",
       content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+        "À travers ses formations en série C et D",
     },
     {
       title: "Cadre de vie favorable",
       content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+        "Depuis son existence, le LSY obtient chaque année des taux de reussite les plus hauts du pays",
     },
   ];
 
@@ -53,8 +53,11 @@ export default function Top() {
       <div className="flex flex-wrap gap-8 justify-center">
         {listNews.map((item, index) => (
           <div key={index} className="max-w-[300px]">
-            <div data-aos="zoom-y-out"
-                data-aos-delay="450" className="bg-gray-100 p-9 rounded-xl space-y-3">
+            <div
+              data-aos="zoom-y-out"
+              data-aos-delay="450"
+              className="bg-gray-100 p-9 rounded-xl space-y-3"
+            >
               <div className="h-11 w-11 rounded-lg bg-orange-600 flex justify-center items-center">
                 <svg
                   viewBox="0 0 24 24"

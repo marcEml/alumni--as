@@ -32,7 +32,7 @@ export default function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* <Logo /> */}
-            <p className="font-bold text-orange-600">AS-Alumni</p>
+            <p className="font-bold text-orange-600">2ALSY</p>
           </div>
 
           {/* Desktop navigation */}
@@ -65,7 +65,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="teachers"
+                  href="login"
                   className="btn-sm text-white bg-orange-600 hover:bg-gray-800 ml-3"
                 >
                   <span>Espace étudiant</span>

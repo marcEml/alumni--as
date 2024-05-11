@@ -25,7 +25,7 @@ export default function Hero() {
               data-aos-delay="400"
               className="mt-3 max-w-sm text-lg text-gray-600 dark:text-white"
             >
-              Excellence, rigueur et épanouissement Former les leaders de demain
+              Modestie, Solidarité, Courage
             </p>
 
             <div className="flex gap-4">
