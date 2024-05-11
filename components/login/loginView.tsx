@@ -27,7 +27,7 @@ export default function LoginView() {
     };
 
     axios
-      .post("http://localhost:2880/api/user/login", data)
+      .post("https://twoasly-bac.onrender.com/api/user/login", data)
       .then((response: { data: any }) => {
         router.push("teachers");
       })
