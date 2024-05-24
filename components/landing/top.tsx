@@ -8,19 +8,19 @@ import { SetStateAction, useCallback, useState } from "react";
 export default function Top() {
   const listNews = [
     {
-      title: "Excellence académique",
+      title: "Excellence Reseau académique",
       content:
-        "Depuis son existence, le LSY obtient chaque année des taux de reussite les plus hauts du pays",
+        "Depuis son existence, la 2ALSY-ESATIC aide les AS dans l'obtention de stage et la recherche d'emploi",
     },
     {
       title: "Formation",
       content:
-        "À travers ses formations en série C et D",
+        "La 2ALSY-ESATIC, à travers ses formations permet aux AS d'avoir des compétences necessaires pour le monde de l'emploi",
     },
     {
-      title: "Cadre de vie favorable",
+      title: "Acompagnement",
       content:
-        "Depuis son existence, le LSY obtient chaque année des taux de reussite les plus hauts du pays",
+        "Fort de son acompagnement, la 2ALSY-ESATIC obtient chaque année le taux de reussite le plus haut de l'ESATIC", 
     },
   ];
 
@@ -45,11 +45,12 @@ export default function Top() {
     <div className="max-w-[85rem] mt-24 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <h2
         data-aos="zoom-y-out"
-        className="h2 mb-20 dark:text-white text-center"
+        className="h2 mb-10 dark:text-white text-center"
       >
-        2ALSY-ESATIC, une reférence locale
+        2ALSY-ESATIC, une reférence Locale
       </h2>
-
+      <h2 className="text-lg font-semibold text-center">La 2ALSY-ESATIC est une section de la 2ALSY nationale située à l&apos;Ecole Supérieur Africaine des TIC (ESATIC) à Abidjan.</h2>
+      <h2 className="text-lg font-semibold text-center mb-10">Elle présente les qualités suivantes :</h2>
       <div className="flex flex-wrap gap-8 justify-center">
         {listNews.map((item, index) => (
           <div key={index} className="max-w-[300px]">

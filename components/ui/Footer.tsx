@@ -30,7 +30,7 @@ export default function Footer() {
                   className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
-                  Projets
+                  Evênements
                 </a>
               </p>
               <p>
@@ -38,7 +38,7 @@ export default function Footer() {
                   className="inline-flex gap-x-2 text-gray-700 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
-                  Actualités
+                  Blog
                 </a>
               </p>
               <p>

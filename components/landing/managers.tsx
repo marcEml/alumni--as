@@ -11,8 +11,8 @@ export default function Managers() {
         "https://plus.unsplash.com/premium_photo-1661766444310-014137fc422c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      text: "Également la 2ASLY-ESATIC accompagne l'ensemble de ses membres dans leur étude à travers des sujets corrigés, des conseils et le fonctionnement de certains enseignements.",
-      name: "Le corro",
+      text: "La 2ASLY-ESATIC accompagne l'ensemble de ses membres dans leur étude à travers des sujets corrigés, des conseils et tips de certains enseignements.",
+      name: "Le Corro",
       link_image:
         "https://plus.unsplash.com/premium_photo-1681494154423-93ba20262dd4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -39,7 +39,7 @@ export default function Managers() {
           data-aos-delay="350"
           className="h1 text-white text-left dark:text-white"
         >
-          Avantages de la 2ALSY
+          Avantages de la 2ALSY-ESATIC
         </h2>
         <p
           data-aos="zoom-y-out"
@@ -71,7 +71,7 @@ export default function Managers() {
                       {manager.name}
                     </h5>
                   </a>
-                  <p className="mb-3 text-justify font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-3 text-left font-normal text-gray-700 dark:text-gray-400">
                     {manager.text}
                   </p>
                 </div>
