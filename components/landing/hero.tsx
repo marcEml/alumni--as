@@ -17,8 +17,8 @@ export default function Hero() {
               data-aos-delay="200"
               className="block flex flex-col text-4xl font-extrabold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
             >
-              LYCÉE
-              <span>SCIENTIFIQUE DE YAMOUSSOUKRO</span>
+              ASSOCIATION 
+              <span>DES AS DE L&apos;ESATIC </span>
             </h1>
             <p
               data-aos="zoom-y-out"

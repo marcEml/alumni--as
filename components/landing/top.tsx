@@ -47,7 +47,7 @@ export default function Top() {
         data-aos="zoom-y-out"
         className="h2 mb-20 dark:text-white text-center"
       >
-        Une reférence Nationale
+        2ALSY-ESATIC, une reférence locale
       </h2>
 
       <div className="flex flex-wrap gap-8 justify-center">

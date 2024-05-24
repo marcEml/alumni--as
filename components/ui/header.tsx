@@ -32,7 +32,7 @@ export default function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* <Logo /> */}
-            <p className="font-bold text-orange-600">2ALSY</p>
+            <p className="font-bold text-orange-600">2ALSY-ESATIC</p>
           </div>
 
           {/* Desktop navigation */}

@@ -2,32 +2,32 @@
 "use client";
 
 import DashboardMobileMenu from "../ui/mobile-menu.dash";
+import { useState, useEffect } from "react";
 import { Drawer } from "@geist-ui/core";
 import { User } from "@geist-ui/icons";
-import { useState, useEffect } from "react";
 
 export default function TeachersView() {
   const [state, setState] = useState(false);
 
-  // const [windowSize, setWindowSize] = useState({
-  //   width: window.innerWidth,
-  //   height: window.innerHeight,
-  // });
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setWindowSize({
-  //       width: window.innerWidth,
-  //       height: window.innerHeight,
-  //     });
-  //   };
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
 
-  //   window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
 
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, [windowSize]);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowSize]);
 
   const math = [
     "Dr Golli",
@@ -65,8 +65,8 @@ export default function TeachersView() {
 
   return (
     <div className="w-full mb-9">
-      {/* {windowSize.width < 730 ? ( */}
-        {/* <header className="fixed w-full text-white z-30 md:bg-opacity-90 transition duration-300 ease-in-out dark:bg-[#222] text-gray-400 dark:bg-[#222] backdrop-blur-sm dark:bg-opacity-90 shadow-lg">
+      {windowSize.width < 730 ? (
+        <header className="fixed w-full text-white z-30 md:bg-opacity-90 transition duration-300 ease-in-out dark:bg-[#222] text-gray-400 dark:bg-[#222] backdrop-blur-sm dark:bg-opacity-90 shadow-lg">
           <div className="max-w-[1200px] mx-auto px-5 sm:px-6">
             <div className="flex items-center justify-between h-16 md:h-20">
               <div className="flex items-center rounded-lg px-3 py-2 text-slate-900 dark:text-white">
@@ -90,8 +90,8 @@ export default function TeachersView() {
               <DashboardMobileMenu />
             </div>
           </div>
-        </header> */}
-      {/* ) : null} */}
+        </header>
+      ) : null}
 
       <Drawer visible={state} onClose={() => setState(false)} placement="right">
         <h1 className="font-bold text-left">

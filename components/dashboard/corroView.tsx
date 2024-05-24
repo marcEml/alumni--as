@@ -15,30 +15,32 @@ export default function CorroView() {
 
   const master2 = ["Info", "SIGL", "SITW", "BIHAR", "MBDS", "MDSI", "ERISE"];
 
-  // const [windowSize, setWindowSize] = useState({
-  //   width: window.innerWidth,
-  //   height: window.innerHeight,
-  // });
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setWindowSize({
-  //       width: window.innerWidth,
-  //       height: window.innerHeight,
-  //     });
-  //   };
 
-  //   window.addEventListener("resize", handleResize);
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, [windowSize]);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowSize]);
 
   return (
     <div className="w-full mb-9">
-      {/* {windowSize.width < 730 ? ( */}
-        {/* <header className="fixed w-full text-white z-30 md:bg-opacity-90 transition duration-300 ease-in-out dark:bg-[#222] text-gray-400 dark:bg-[#222] backdrop-blur-sm dark:bg-opacity-90 shadow-lg">
+      {windowSize.width < 730 ? (
+        <header className="fixed w-full text-white z-30 md:bg-opacity-90 transition duration-300 ease-in-out dark:bg-[#222] text-gray-400 dark:bg-[#222] backdrop-blur-sm dark:bg-opacity-90 shadow-lg">
           <div className="max-w-[1200px] mx-auto px-5 sm:px-6">
             <div className="flex items-center justify-between h-16 md:h-20">
               <div className="flex items-center rounded-lg px-3 py-2 text-slate-900 dark:text-white">
@@ -62,8 +64,8 @@ export default function CorroView() {
               <DashboardMobileMenu />
             </div>
           </div>
-        </header> */}
-      {/* ) : null} */}
+        </header>
+      ) : null}
 
       <div className="px-6">
         <div className="md:pt-6 mb-4 pt-24 pb-2 border-b-2 border-gray-100 flex items-center justify-between">
