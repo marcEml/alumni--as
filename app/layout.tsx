@@ -1,5 +1,4 @@
 import { Montserrat } from "next/font/google";
-
 import "./css/globals.css";
 
 const montserrat = Montserrat({
