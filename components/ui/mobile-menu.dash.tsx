@@ -181,7 +181,9 @@ export default function DashboardMobileMenu() {
                     </g>
                   </g>
                 </svg>
-                <span className="ml-3 flex-1 whitespace-nowrap">Astuces</span>
+                <span className="ml-3 flex-1 whitespace-nowrap">
+                  Annuaire des AS
+                </span>
               </a>
             </li>
             <li>
@@ -213,7 +215,7 @@ export default function DashboardMobileMenu() {
                   </g>
                 </svg>
                 <span className="ml-3 flex-1 whitespace-nowrap">
-                  Informations
+                  groupe WhatsApp des AS
                 </span>
               </a>
             </li>
