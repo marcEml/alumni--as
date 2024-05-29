@@ -20,7 +20,7 @@ export default function Top() {
     {
       title: "Acompagnement",
       content:
-        "Fort de son acompagnement, la 2ALSY-ESATIC obtient chaque année le taux de reussite le plus haut de l'ESATIC", 
+        "Fort de son acompagnement, la 2ALSY-ESATIC obtient chaque année le taux de reussite le plus haut de l'ESATIC",
     },
   ];
 
@@ -49,8 +49,13 @@ export default function Top() {
       >
         2ALSY-ESATIC, une reférence Locale
       </h2>
-      <h2 className="text-lg font-semibold text-center">La 2ALSY-ESATIC est une section de la 2ALSY nationale située à l&apos;Ecole Supérieur Africaine des TIC (ESATIC) à Abidjan.</h2>
-      <h2 className="text-lg font-semibold text-center mb-10">Elle présente les qualités suivantes :</h2>
+      <h2 className="text-lg font-semibold text-center dark:text-white">
+        La 2ALSY-ESATIC est une section de la 2ALSY nationale située à
+        l&apos;Ecole Supérieur Africaine des TIC (ESATIC) à Abidjan.
+      </h2>
+      <h2 className="text-lg font-semibold text-center mb-10 dark:text-white">
+        Elle présente les qualités suivantes
+      </h2>
       <div className="flex flex-wrap gap-8 justify-center">
         {listNews.map((item, index) => (
           <div key={index} className="max-w-[300px]">

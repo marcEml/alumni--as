@@ -48,7 +48,7 @@ export default function DashboardMobileMenu() {
       >
         <span className="sr-only">Menu</span>
         <svg
-          className="w-6 h-6 fill-current text-gray-900"
+          className="dark:fill-white w-6 h-6 fill-current text-gray-900"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -76,7 +76,7 @@ export default function DashboardMobileMenu() {
             <li>
               <a
                 href="/teachers"
-                className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-700"
+                className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-blue-50"
               >
                 <svg
                   className="h-5"
@@ -115,7 +115,7 @@ export default function DashboardMobileMenu() {
                     ></path>{" "}
                   </g>
                 </svg>
-                <span className="ml-3 flex-1 whitespace-nowrap">
+                <span className="ml-3 flex-1 whitespace-nowrap dark:text-gray-900">
                   Enseignants
                 </span>
               </a>
@@ -123,7 +123,7 @@ export default function DashboardMobileMenu() {
             <li>
               <a
                 href="/corro"
-                className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-700"
+                className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-blue-50"
               >
                 <svg
                   className="h-5"
@@ -148,13 +148,13 @@ export default function DashboardMobileMenu() {
                     ></path>{" "}
                   </g>
                 </svg>
-                <span className="ml-3 flex-1 whitespace-nowrap">Le corro</span>
+                <span className="ml-3 flex-1 whitespace-nowrap dark:text-gray-900">Le corro</span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-700"
+                className="flex items-center rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-blue-50"
               >
                 <svg
                   className="h-5"
@@ -181,7 +181,7 @@ export default function DashboardMobileMenu() {
                     </g>
                   </g>
                 </svg>
-                <span className="ml-3 flex-1 whitespace-nowrap">
+                <span className="ml-3 flex-1 whitespace-nowrap dark:text-gray-900">
                   Annuaire des AS
                 </span>
               </a>
@@ -189,7 +189,7 @@ export default function DashboardMobileMenu() {
             <li>
               <a
                 href="#"
-                className="flex items-center mb-9 rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-slate-700"
+                className="flex items-center mb-9 rounded-lg px-3 py-2 text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-blue-50"
               >
                 <svg
                   className="h-5"
@@ -214,7 +214,7 @@ export default function DashboardMobileMenu() {
                     ></path>{" "}
                   </g>
                 </svg>
-                <span className="ml-3 flex-1 whitespace-nowrap">
+                <span className="ml-3 flex-1 whitespace-nowrap dark:text-gray-900">
                   groupe WhatsApp des AS
                 </span>
               </a>

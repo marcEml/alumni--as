@@ -152,7 +152,7 @@ export default function CorroView() {
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
+                  <path className="dark:fill-white" d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
                 </svg>
                 <span className="ml-3 text-base font-semibold">2ASLY</span>
               </div>
@@ -164,11 +164,11 @@ export default function CorroView() {
 
       <div className="px-6">
         <div className="md:pt-6 mb-4 pt-24 pb-2 border-b-2 border-gray-100 flex items-center justify-between">
-          <h1 className="font-bold text-lg text-blue-700">Le corro</h1>
+          <h1 className="font-bold text-lg text-blue-700 dark:text-white">Le corro</h1>
         </div>
 
         <div>
-          <h1 className="text-lg font-semibold">Licence 1</h1>
+          <h1 className="text-lg font-semibold dark:text-white">Licence 1</h1>
           <div className="flex flex-wrap gap-x-4">
             {licence1.map((item, index) => (
               <Link key={index} target="blank" href={item.link}>
@@ -187,31 +187,31 @@ export default function CorroView() {
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M5 17H19C21 17 22 16 22 14V10C22 8 21 7 19 7H5C3 7 2 8 2 10V14C2 16 3 17 5 17Z"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M18 7V12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M6 7V11"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M10.05 7L10 12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M14 7V10"
                         stroke="#292D32"
                         stroke-width="1.5"
@@ -219,7 +219,7 @@ export default function CorroView() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  <p>{item.level}</p>
+                  <p className="dark:text-white">{item.level}</p>
                 </button>
               </Link>
             ))}
@@ -227,7 +227,7 @@ export default function CorroView() {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-lg font-semibold">Licence 2</h1>
+          <h1 className="text-lg font-semibold dark:text-white">Licence 2</h1>
           <div className="flex flex-wrap gap-x-4">
             {licence2.map((item, index) => (
               <Link
@@ -250,31 +250,31 @@ export default function CorroView() {
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M5 17H19C21 17 22 16 22 14V10C22 8 21 7 19 7H5C3 7 2 8 2 10V14C2 16 3 17 5 17Z"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M18 7V12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M6 7V11"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M10.05 7L10 12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M14 7V10"
                         stroke="#292D32"
                         stroke-width="1.5"
@@ -282,7 +282,7 @@ export default function CorroView() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  <p>{item.level}</p>
+                  <p className="dark:text-white">{item.level}</p>
                 </button>
               </Link>
             ))}
@@ -290,7 +290,7 @@ export default function CorroView() {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-lg font-semibold">Licence 3</h1>
+          <h1 className="text-lg font-semibold dark:text-white">Licence 3</h1>
           <div className="flex flex-wrap gap-x-4">
             {licence3.map((item, index) => (
               <Link
@@ -313,31 +313,31 @@ export default function CorroView() {
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M5 17H19C21 17 22 16 22 14V10C22 8 21 7 19 7H5C3 7 2 8 2 10V14C2 16 3 17 5 17Z"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M18 7V12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M6 7V11"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M10.05 7L10 12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M14 7V10"
                         stroke="#292D32"
                         stroke-width="1.5"
@@ -345,7 +345,7 @@ export default function CorroView() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  <p>{item.level}</p>
+                  <p className="dark:text-white">{item.level}</p>
                 </button>
               </Link>
             ))}
@@ -353,7 +353,7 @@ export default function CorroView() {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-lg font-semibold">Master 1</h1>
+          <h1 className="text-lg font-semibold dark:text-white">Master 1</h1>
           <div className="flex flex-wrap gap-x-4">
             {master1.map((item, index) => (
               <Link
@@ -376,31 +376,31 @@ export default function CorroView() {
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M5 17H19C21 17 22 16 22 14V10C22 8 21 7 19 7H5C3 7 2 8 2 10V14C2 16 3 17 5 17Z"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M18 7V12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M6 7V11"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M10.05 7L10 12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M14 7V10"
                         stroke="#292D32"
                         stroke-width="1.5"
@@ -408,7 +408,7 @@ export default function CorroView() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  <p>{item.level}</p>
+                  <p className="dark:text-white">{item.level}</p>
                 </button>
               </Link>
             ))}
@@ -416,7 +416,7 @@ export default function CorroView() {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-lg font-semibold">Master 2</h1>
+          <h1 className="text-lg font-semibold dark:text-white">Master 2</h1>
           <div className="flex flex-wrap gap-x-4">
             {master2.map((item, index) => (
               <Link key={index} target="blank" href={item.link}>
@@ -435,31 +435,31 @@ export default function CorroView() {
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M5 17H19C21 17 22 16 22 14V10C22 8 21 7 19 7H5C3 7 2 8 2 10V14C2 16 3 17 5 17Z"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M18 7V12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M6 7V11"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M10.05 7L10 12"
                         stroke="#292D32"
                         stroke-width="1.5"
                         stroke-linecap="round"
                       ></path>{" "}
-                      <path
+                      <path className="dark:fill-white"
                         d="M14 7V10"
                         stroke="#292D32"
                         stroke-width="1.5"
@@ -467,7 +467,7 @@ export default function CorroView() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  <p>{item.level}</p>
+                  <p className="dark:text-white">{item.level}</p>
                 </button>
               </Link>
             ))}

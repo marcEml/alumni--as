@@ -8,8 +8,11 @@ export default function Hero() {
       <div className="max-w-[76rem] mx-auto px-4 sm:px-6 lg:px-8 md:mt-32">
         <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
           <div className="mt-24">
-            <p data-aos="zoom-y-out"
-              data-aos-delay="100" className="text-orange-500 font-semibold text-[16px] mb-6">
+            <p
+              data-aos="zoom-y-out"
+              data-aos-delay="100"
+              className="text-orange-500 font-semibold text-[16px] mb-6"
+            >
               L’excellence par dessus tout...
             </p>
             <h1
@@ -17,7 +20,7 @@ export default function Hero() {
               data-aos-delay="200"
               className="block flex flex-col text-4xl font-extrabold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
             >
-              ASSOCIATION 
+              ASSOCIATION
               <span>DES AS DE L&apos;ESATIC </span>
             </h1>
             <p
@@ -25,7 +28,7 @@ export default function Hero() {
               data-aos-delay="400"
               className="mt-3 max-w-sm text-lg text-gray-600 dark:text-white"
             >
-              Modestie, Solidarité, Courage
+              LES AÎNÉS AU SERVICE DES CADETS
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
@@ -55,11 +58,11 @@ export default function Hero() {
               <div
                 data-aos="zoom-y-out"
                 data-aos-delay="350"
-                className="mt-7 grid gap-3 sm:inline-flex border-2 border-orange-600 rounded-lg"
+                className="mt-7 dark:bg-white dark:border-0 dark:hover:bg-gray-50 grid gap-3 sm:inline-flex border-2 border-orange-600 rounded-lg"
               >
                 <Link
                   href="/signup"
-                  className="btn-sm text-orange-600 hover:bg-gray-800"
+                  className="btn-sm text-orange-600"
                 >
                   <span>Actualité sur l&apos;association</span>
                   <svg
