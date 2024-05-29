@@ -131,7 +131,7 @@ export default function Projects() {
                   >
                     <img
                       className="shadow-xl shadow-gray-300 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://scontent.fabj4-2.fna.fbcdn.net/v/t39.30808-6/444479293_7447223365331694_7402616110134355579_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=s2VH9M8JhzoQ7kNvgGrn2ks&_nc_ht=scontent.fabj4-2.fna&oh=00_AYB6ZbU7W3jKU952pWlF0IQbifJPUulUytgJ3C8sJOuzkQ&oe=66563106"
+                      src="https://scontent.fabj4-2.fna.fbcdn.net/v/t39.30808-6/444479293_7447223365331694_7402616110134355579_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ow405mEUTiUQ7kNvgGGujpM&_nc_ht=scontent.fabj4-2.fna&oh=00_AYAYCwah5Rss5iiTI7d3iaM5dXRl9lLqwPAxsDjdQwMmrA&oe=665D00C6"
                       alt="Image Description"
                     />
                   </div>
@@ -148,7 +148,7 @@ export default function Projects() {
                   >
                     <img
                       className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://scontent.fabj4-2.fna.fbcdn.net/v/t39.30808-6/444479293_7447223365331694_7402616110134355579_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=s2VH9M8JhzoQ7kNvgGrn2ks&_nc_ht=scontent.fabj4-2.fna&oh=00_AYB6ZbU7W3jKU952pWlF0IQbifJPUulUytgJ3C8sJOuzkQ&oe=66563106"
+                      src="https://scontent.fabj4-2.fna.fbcdn.net/v/t39.30808-6/444479293_7447223365331694_7402616110134355579_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ow405mEUTiUQ7kNvgGGujpM&_nc_ht=scontent.fabj4-2.fna&oh=00_AYAYCwah5Rss5iiTI7d3iaM5dXRl9lLqwPAxsDjdQwMmrA&oe=665D00C6"
                       alt="Image Description"
                     />
                   </div>
@@ -165,7 +165,7 @@ export default function Projects() {
                   >
                     <img
                       className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://scontent.fabj4-2.fna.fbcdn.net/v/t39.30808-6/444479293_7447223365331694_7402616110134355579_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=s2VH9M8JhzoQ7kNvgGrn2ks&_nc_ht=scontent.fabj4-2.fna&oh=00_AYB6ZbU7W3jKU952pWlF0IQbifJPUulUytgJ3C8sJOuzkQ&oe=66563106"
+                      src="https://scontent.fabj4-2.fna.fbcdn.net/v/t39.30808-6/444479293_7447223365331694_7402616110134355579_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ow405mEUTiUQ7kNvgGGujpM&_nc_ht=scontent.fabj4-2.fna&oh=00_AYAYCwah5Rss5iiTI7d3iaM5dXRl9lLqwPAxsDjdQwMmrA&oe=665D00C6"
                       alt="Image Description"
                     />
                   </div>

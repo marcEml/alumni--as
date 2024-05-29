@@ -3,8 +3,8 @@ export const metadata = {
   description: "Page description",
 };
 
-import Managers from "@/components/landing/managers";
-import Projects from "@/components/landing/projects";
+import Managers from "@/components/landing/about";
+import Projects from "@/components/landing/mission";
 import Submit from "@/components/landing/submit";
 import Hero from "@/components/landing/hero";
 import Footer from "@/components/ui/Footer";

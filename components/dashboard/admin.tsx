@@ -168,7 +168,7 @@ export default function AdminView(props: any) {
                       </g>
                     </svg>
                     <span className="ml-3 flex-1 whitespace-nowrap">
-                      Astuces
+                      Annuaire des AS
                     </span>
                   </a>
                 </li>
@@ -201,7 +201,7 @@ export default function AdminView(props: any) {
                       </g>
                     </svg>
                     <span className="ml-3 flex-1 whitespace-nowrap">
-                      Informations
+                      groupe WhatsApp des AS
                     </span>
                   </a>
                 </li>
@@ -264,9 +264,7 @@ export default function AdminView(props: any) {
           <div className="sm:ml-64">{props.pages}</div>
         </div>
       ) : (
-        <div>
-          {props.pages}
-        </div>
+        <div>{props.pages}</div>
       )}
     </div>
   );
