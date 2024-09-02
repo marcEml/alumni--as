@@ -1,5 +1,4 @@
 import { Montserrat } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 import "./css/globals.css";
 
 const montserrat = Montserrat({
